@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.os.Bundle
 import android.widget.Toast

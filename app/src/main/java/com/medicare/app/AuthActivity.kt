@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.content.Intent
 import android.os.Bundle

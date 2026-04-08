@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.view.LayoutInflater
 import android.view.View

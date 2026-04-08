@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 object Constants {
     // TODO: Replace with your actual Supabase details

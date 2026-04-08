@@ -217,7 +217,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCreateAccount"
-                style="@style/Widget.MediSure.Button"
+                style="@style/Widget.Medicare.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Create Account"

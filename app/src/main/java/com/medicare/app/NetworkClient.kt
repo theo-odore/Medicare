@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

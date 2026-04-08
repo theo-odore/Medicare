@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import retrofit2.Call
 import retrofit2.http.Body

@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.content.Intent
 import android.os.Bundle
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             val name = "Medicine Reminders"
             val descriptionText = "Notifications for medicine reminders"
             val importance = android.app.NotificationManager.IMPORTANCE_HIGH
-            val channel = android.app.NotificationChannel("medisure_reminders", name, importance).apply {
+            val channel = android.app.NotificationChannel("medicare_reminders", name, importance).apply {
                 description = descriptionText
             }
             val notificationManager: android.app.NotificationManager =

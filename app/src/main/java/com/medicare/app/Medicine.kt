@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 data class Medicine(
     val id: String,

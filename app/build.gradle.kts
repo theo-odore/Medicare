@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.medisure.app"
+    namespace = "com.medicare.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.medisure.app"
+        applicationId = "com.medicare.app"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

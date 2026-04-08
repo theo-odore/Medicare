@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.content.BroadcastReceiver
 import android.content.Context

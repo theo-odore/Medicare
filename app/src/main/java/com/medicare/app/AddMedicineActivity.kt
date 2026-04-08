@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.os.Bundle
 import android.widget.Button
@@ -32,7 +32,7 @@ class AddMedicineActivity : AppCompatActivity() {
             val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
             val minute = calendar.get(java.util.Calendar.MINUTE)
 
-            android.app.TimePickerDialog(this, R.style.MediSure_TimePicker, { _, h, m ->
+            android.app.TimePickerDialog(this, R.style.Medicare_TimePicker, { _, h, m ->
                 selectedHour = h
                 selectedMinute = m
                 val timeFormat = String.format("%02d:%02d", h, m)

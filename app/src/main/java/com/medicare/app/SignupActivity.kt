@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.graphics.Color
 import android.os.Bundle

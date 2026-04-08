@@ -1,10 +1,10 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.content.Context
 import android.content.SharedPreferences
 
 object SessionManager {
-    private const val PREF_NAME = "MediSureSession"
+    private const val PREF_NAME = "MedicareSession"
     private const val KEY_ACCESS_TOKEN = "access_token"
     private const val KEY_USER_ID = "user_id"
 

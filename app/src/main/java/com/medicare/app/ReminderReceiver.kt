@@ -1,4 +1,4 @@
-package com.medisure.app
+package com.medicare.app
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -16,7 +16,7 @@ class ReminderReceiver : BroadcastReceiver() {
         val dosage = intent.getStringExtra("medicine_dosage") ?: ""
         
         val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        val channelId = "medisure_reminders"
+        val channelId = "medicare_reminders"
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(channelId, "Medicine Reminders", NotificationManager.IMPORTANCE_HIGH)

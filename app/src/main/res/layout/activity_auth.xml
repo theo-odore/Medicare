@@ -17,7 +17,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardLogin"
-        style="@style/Widget.MediSure.Card"
+        style="@style/Widget.Medicare.Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
@@ -84,7 +84,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogin"
-                style="@style/Widget.MediSure.Button"
+                style="@style/Widget.Medicare.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/login"
