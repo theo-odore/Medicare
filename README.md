@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://img.icons8.com/color/96/000000/medical-doctor.png" alt="Logo">
-  <h1>Medicare (Medicare)</h1>
+  <h1>Medicare</h1>
   <p><b>A beautifully crafted, robust Android application designed to elevate medication adherence and caregiver peace of mind.</b></p>
 
   [![Kotlin](https://img.shields.io/badge/Kotlin-Native-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
