@@ -24,10 +24,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/manrope_bold"
                 android:textColor="@color/colorPrimary"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="8dp"/>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -58,12 +59,12 @@
                         style="@style/Widget.MediSure.Card"
                         android:layout_width="140dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp">
+                        android:layout_marginEnd="12dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="12dp">
+                            android:padding="16dp">
                             <TextView
                                 android:id="@+id/textAdherence"
                                 android:text="0%"
@@ -86,12 +87,12 @@
                         style="@style/Widget.MediSure.Card"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp">
+                        android:layout_marginEnd="12dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="12dp">
+                            android:padding="16dp">
                             <TextView
                                 android:id="@+id/textTakenCount"
                                 android:text="0"
@@ -114,12 +115,12 @@
                         style="@style/Widget.MediSure.Card"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp">
+                        android:layout_marginEnd="12dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="12dp">
+                            android:padding="16dp">
                             <TextView
                                 android:id="@+id/textPendingCount"
                                 android:text="0"
@@ -146,7 +147,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="12dp">
+                            android:padding="16dp">
                             <TextView
                                 android:id="@+id/textMissedCount"
                                 android:text="0"
@@ -172,13 +173,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                app:strokeColor="@color/colorPrimaryVariant"
-                app:strokeWidth="1dp">
+                app:cardCornerRadius="24dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:paddingTop="24dp"
+                    android:paddingBottom="24dp"
+                    android:paddingHorizontal="16dp">
                     
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -186,12 +188,12 @@
                         
                         <TextView
                             android:id="@+id/titleProgress"
-                            android:text="Today's Progress"
-                            android:textStyle="bold"
-                            android:textSize="18sp"
+                            android:text="Daily Adherence"
+                            android:fontFamily="@font/manrope_bold"
+                            android:textSize="20sp"
                             android:textColor="@color/colorTextPrimary"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="20dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -208,10 +210,10 @@
                                 android:layout_height="wrap_content"
                                 android:progress="0"
                                 app:indicatorColor="@color/colorPrimary"
-                                app:trackColor="@color/colorSecondary"
-                                app:indicatorSize="140dp"
-                                app:trackThickness="12dp"
-                                app:trackCornerRadius="6dp"/>
+                                app:trackColor="@color/colorPrimaryFixed"
+                                app:indicatorSize="160dp"
+                                app:trackThickness="14dp"
+                                app:trackCornerRadius="7dp"/>
                                 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -223,8 +225,8 @@
                                 <TextView
                                     android:id="@+id/textProgressPercent"
                                     android:text="0%"
-                                    android:textStyle="bold"
-                                    android:textSize="28sp"
+                                    android:fontFamily="@font/manrope_bold"
+                                    android:textSize="32sp"
                                     android:textColor="@color/colorPrimary"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
@@ -246,10 +248,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Your Medicines"
-                android:textSize="18sp"
-                android:textStyle="bold"
+                android:fontFamily="@font/manrope_bold"
+                android:textSize="20sp"
                 android:textColor="@color/colorTextPrimary"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginStart="8dp"/>
 
             <!-- RecyclerView for Real Data -->

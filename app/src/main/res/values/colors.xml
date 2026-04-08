@@ -3,24 +3,26 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <!-- Primary - Calming Teal (166 84% 37%) -->
-    <color name="colorPrimary">#0FAF87</color>
-    <color name="colorPrimaryVariant">#007D5E</color>
+    <!-- Primary - Deep Teal -->
+    <color name="colorPrimary">#004D4C</color>
+    <color name="colorPrimaryVariant">#006766</color>
+    <color name="colorPrimaryFixed">#A2F0EE</color>
     <color name="colorOnPrimary">#FFFFFF</color>
 
-    <!-- Background - Warm off-white (180 20% 98%) -->
-    <color name="colorBackground">#F5FAFA</color>
-    <color name="colorSurface">#FFFFFF</color>
+    <!-- Background - Tonal Layering -->
+    <color name="colorBackground">#F8FAFA</color> <!-- Base Canvas -->
+    <color name="colorSurfaceLow">#F2F4F4</color> <!-- Sections -->
+    <color name="colorSurface">#FFFFFF</color> <!-- Interactive / Cards -->
     
-    <!-- Secondary - Soft Sage -->
-    <color name="colorSecondary">#EFFDF9</color>
-    <color name="colorOnSecondary">#0FAF87</color>
+    <!-- Secondary - Soft Pill -->
+    <color name="colorSecondary">#CCE8E7</color>
+    <color name="colorOnSecondary">#051F20</color>
 
     <!-- Alerts -->
-    <color name="colorError">#F23D3D</color> <!-- Destructive -->
-    <color name="colorWarning">#F5A60F</color> <!-- Accent/Warning -->
+    <color name="colorError">#BA1A1A</color> <!-- Missed -->
+    <color name="colorWarning">#FFB347</color> <!-- Pending (Soft Orange) -->
     
     <!-- Text -->
-    <color name="colorTextPrimary">#1A1F2B</color> <!-- Dark Blue-Grey -->
-    <color name="colorTextSecondary">#71717A</color> <!-- Gray -->
+    <color name="colorTextPrimary">#191C1D</color>
+    <color name="colorTextSecondary">#3E4948</color>
 </resources>
