@@ -1,34 +1,147 @@
-# MediSure
+<div align="center">
+  <img src="https://img.icons8.com/color/96/000000/medical-doctor.png" alt="Logo">
+  <h1>MediSure (Medicare)</h1>
+  <p><b>A beautifully crafted, robust Android application designed to elevate medication adherence and caregiver peace of mind.</b></p>
 
-MediSure is a native Android application designed to help patients and caregivers seamlessly track medication schedules. With a focus on a premium user experience and adherence, MediSure introduces a **Calming Teal** design system and robust, intuitive native interactions.
+  [![Kotlin](https://img.shields.io/badge/Kotlin-Native-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
+  [![Android](https://img.shields.io/badge/Android-UI-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
+  [![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+  
+</div>
 
-## Features
+<br>
 
-- **Daily Dashboard**: View your medication progress for the day, beautifully displayed using a `CircularProgressIndicator` with real-time percentage completion.
-- **Swipe-to-Delete**: Effortlessly swipe left-to-right to discard medications, complete with a visually appealing red background trash-can confirmation.
-- **Calming Teal Design System**: A premium, editorial, and card-based layout featuring a pristine Light Mode and a seamless, high-contrast Dark Mode.
-- **Medication History**: Check off a complete history of all your ingested medications.
-- **Notifications & Alarms**: Stay on top of your schedule with integrated `AlarmManager` alerts. You don't even have to open the app; native notification actions let you mark a pill as Taken directly from your lock screen!
-- **Caregiver Tools**: Instantly assess patient risk (Low/Medium/High) and adherence with specialized caregiver dashboards.
+MediSure seamlessly bridges the gap between structured health schedules and a premium, accessible user experience. Built completely native with Kotlin and powered by an ultra-fast Supabase REST layer, MediSure delivers local notifications, real-time sync, and granular tracking. 
 
-## Screen Designs
+## ✨ Key Features
 
-*Here are a few glimpses of our sleek Dark & Light user interfaces:*
+- 🟢 **Calming Teal Design System:** A highly polished, editorial-styled UI constructed entirely using native XML. Features comprehensive **Light and Dark Mode** adaptations ensuring accessibility at any hour.
+- 📊 **Animated Daily Dashboard:** Keep track of the day's tasks instantly with a beautifully styled Material 3 `CircularProgressIndicator` that updates adherence statistics as pills are taken.
+- 📲 **Swipe-To-Delete Gestures:** Complete your routine with intuitive left-to-right swipe physics, augmented by background color transitions and destructive action indicators.
+- ⏰ **Lock-Screen Notifications:** Background `AlarmManager` configurations push timely system alerts. Patients can mark their medications as "Taken" directly from their lock screen using deep-linked `PendingIntents` without needing to open the app.
+- 🧑‍⚕️ **Caregiver Command Center:** A devoted workflow for caregivers to monitor assigned patients, visualizing their real-time adherence levels and stratifying their "Risk Status" dynamically.
+- 🔒 **Secure Authorization:** Token-based, REST-driven authentication connecting natively to Supabase's managed Postgres instance. 
 
-### Patient Dashboard Iterations & Interactions
-![Medication Progress](screenshots/uploaded_media_1769849860238.png)
-![Dashboard UI](screenshots/uploaded_media_1769795089592.png)
-![History & Interaction](screenshots/uploaded_media_1769794704753.png)
+---
 
-## Tech Stack
+## 📸 In-App Experiences
 
-- **Android SDK:** Kotlin, XML.
-- **Architecture:** Material Design standard, custom adapters, and handlers.
-- **Networking/Database:** Supabase via Retrofit & OkHttp.
-- **UI Toolkit:** Native Android Views, `RecyclerView`, `ItemTouchHelper`, and customized Material 3 components.
+*Previewing our native Light & Dark interfaces:*
 
-## Setup
+<p align="center">
+  <img src="screenshots/uploaded_media_1769849860238.png" width="250" alt="Medication Progress">
+  <img src="screenshots/uploaded_media_1769795089592.png" width="250" alt="Dashboard UI">
+  <img src="screenshots/uploaded_media_1769794704753.png" width="250" alt="History & Interaction">
+</p>
 
-1. Add your `local.properties` environment variable containing your `SUPABASE_URL` and `SUPABASE_KEY`.
-2. Build project using Gradle: `./gradlew assembleDebug`
-3. Launch on a real device or emulator.
+---
+
+## 🏛️ System Architecture
+
+MediSure operates via a clean model-view decoupled architecture, communicating exclusively over secure HTTPS endpoints natively formatted to Retrofit.
+
+```mermaid
+graph TD
+    A[<b>Patient Device</b><br>Native Android] -->|AlarmManager| A
+    B[<b>Caregiver Device</b><br>Native Android]
+    
+    A -->|Retrofit REST| C{Supabase API Gateway}
+    B -->|Retrofit REST| C
+    
+    C -->|PostgREST| D[(PostgreSQL<br>Database)]
+    C -->|GoTrue| E[Supabase Auth]
+    
+    subgraph Data Layer
+    D --> F[Profiles Table]
+    D --> G[Medicines Table]
+    end
+```
+
+---
+
+## 🗄️ Database Schema & RLS
+
+MediSure enforces ultra-strict Row-Level Security (RLS) within Supabase. Data requests bypass SDK boundaries through fully native Retrofit models. For self-hosting or deployment, execute the following within the Supabase SQL Editor:
+
+```sql
+-- Enable UUID extension
+create extension if not exists "uuid-ossp";
+
+-- PROFILES (Public user data)
+create table profiles (
+  id uuid references auth.users on delete cascade not null primary key,
+  email text,
+  full_name text,
+  avatar_url text,
+  role text check (role in ('patient', 'caregiver')) default 'patient',
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- MEDICINES
+create table medicines (
+  id uuid default uuid_generate_v4() primary key,
+  user_id uuid not null,
+  name text not null,
+  dosage text, 
+  stock integer default 0,
+  unit text, 
+  instructions text,
+  reminder_time text, 
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- STRICT RLS Policies
+alter table profiles enable row level security;
+alter table medicines enable row level security;
+
+create policy "Users can view own profile" on profiles for select using (auth.uid() = id);
+create policy "Users can update own profile" on profiles for update using (auth.uid() = id);
+
+create policy "Users can view own medicines" on medicines for select using (auth.uid() = user_id);
+create policy "Users can insert own medicines" on medicines for insert with check (auth.uid() = user_id);
+create policy "Users can update own medicines" on medicines for update using (auth.uid() = user_id);
+create policy "Users can delete own medicines" on medicines for delete using (auth.uid() = user_id);
+```
+
+---
+
+## 🚀 Local Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/theo-odore/Medicare.git
+   cd Medicare
+   ```
+2. **Environment Variables:**
+   For security, API keys are completely stripped from source control. In the root directory of your app (`d:/projects/MediSure`), create a file titled `local.properties`. Append your Supabase configuration parameters:
+   ```properties
+   SUPABASE_URL="https://your-project-url.supabase.co"
+   SUPABASE_KEY="your-anon-api-key"
+   ```
+3. **Build Target:**
+   Sync the Gradle environment and execute a debug build utilizing the local terminal or Android Studio:
+   ```bash
+   ./gradlew assembleDebug
+   ```
+4. **Deploy:**
+   Target a connected Emulator or physical native device:
+   ```bash
+   ./gradlew installDebug
+   ```
+
+---
+
+## 🛠️ Stack & Dependencies
+
+| Layer | Technology | 
+| ----- | ----------- | 
+| **Language** | Kotlin |
+| **Networking** | Retrofit 2 & OkHttp 3 Logging Interceptor |
+| **Parsing** | Gson converter factories |
+| **UI Mapping** | Material 3 Components, RecyclerView, Cards |
+| **Gestures** | AndroidX `ItemTouchHelper` |
+| **Backgrounding** | Native `AlarmManager` & `NotificationCompat` |
+
+---
+
+*Designed for reliability. Built for scale.*
