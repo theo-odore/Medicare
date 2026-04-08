@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_bg_icon_circle_teal.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\bg_icon_circle_teal.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\layout_activity_add_medicine.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_add_medicine.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\layout_item_medicine.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\item_medicine.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_bg_badge_low_risk.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\bg_badge_low_risk.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_bg_badge_pending.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\bg_badge_pending.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\layout_activity_caregiver.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_caregiver.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\layout_activity_auth.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_bg_badge_high_risk.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\bg_badge_high_risk.xml"
+    },
+    {
+        "merged": "com.medisure.app-merged_res-31:/menu_menu_main.xml.flat",
+        "source": "com.medisure.app-main-33:/menu/menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_ic_delete_white.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\ic_delete_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_bg_badge_alert.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\bg_badge_alert.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.medisure.app-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "com.medisure.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\layout_item_patient.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\item_patient.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_ic_mail.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\ic_mail.xml"
+    },
+    {
+        "merged": "com.medisure.app-merged_res-31:/layout_activity_history.xml.flat",
+        "source": "com.medisure.app-main-33:/layout/activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_bg_badge_taken.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\bg_badge_taken.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-merged_res-31:\\drawable_bg_badge_adherence.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\drawable\\bg_badge_adherence.xml"
+    }
+]

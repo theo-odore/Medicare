@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary - Calming Teal (166 84% 37%) -->
+    <color name="colorPrimary">#0FAF87</color>
+    <color name="colorPrimaryVariant">#007D5E</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Background - Warm off-white (180 20% 98%) -->
+    <color name="colorBackground">#F5FAFA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    
+    <!-- Secondary - Soft Sage -->
+    <color name="colorSecondary">#EFFDF9</color>
+    <color name="colorOnSecondary">#0FAF87</color>
+
+    <!-- Alerts -->
+    <color name="colorError">#F23D3D</color> <!-- Destructive -->
+    <color name="colorWarning">#F5A60F</color> <!-- Accent/Warning -->
+    
+    <!-- Text -->
+    <color name="colorTextPrimary">#1A1F2B</color> <!-- Dark Blue-Grey -->
+    <color name="colorTextSecondary">#71717A</color> <!-- Gray -->
+</resources>

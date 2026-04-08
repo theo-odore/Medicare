@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeColor="#EEF2F6"
+    app:strokeWidth="1dp"
+    app:contentPadding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorTextPrimary"/>
+                
+                <TextView
+                    android:id="@+id/textDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age: 72 • Last active: 2 mins ago"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end">
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnViewDetails"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="View Details"
+                    android:textSize="10sp"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="#2962FF"
+                    android:layout_marginBottom="8dp"/>
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCall"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Call"
+                    android:textSize="10sp"
+                    android:textColor="#263238"
+                    app:strokeColor="#CFD8DC"
+                    app:iconTint="#E91E63"
+                    app:icon="@android:drawable/stat_sys_phone_call"
+                    app:cornerRadius="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Use a flexible layout (Flexbox or just Horizontal Linear wrapping) for tags -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <!-- Risk Badge -->
+            <TextView
+                android:id="@+id/textRisk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● LOW RISK"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:background="@drawable/bg_badge_low_risk"
+                android:textColor="#388E3C"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Adherence Badge -->
+            <TextView
+                android:id="@+id/textAdherence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adherence: 85%"
+                android:textSize="11sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:background="@drawable/bg_badge_adherence"
+                android:textColor="#1976D2"
+                android:layout_marginEnd="8dp"/>
+                
+            <!-- Alert Badge (Optional) -->
+             <TextView
+                android:id="@+id/textAlerts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Alerts"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:background="@drawable/bg_badge_alert"
+                android:textColor="#D32F2F"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

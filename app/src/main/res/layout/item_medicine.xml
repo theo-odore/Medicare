@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="#E0E0E0"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Icon Container -->
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_icon_circle_teal"
+            android:layout_marginEnd="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_lock"
+                android:layout_gravity="center"
+                app:tint="@color/colorPrimary"/>
+        </FrameLayout>
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+                
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metformin"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextPrimary"/>
+                    
+                <!-- Status Badge -->
+                <TextView
+                    android:id="@+id/textStatusBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:textSize="10sp"
+                    android:textColor="#F57C00"
+                    android:background="@drawable/bg_badge_pending"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="2dp"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textDosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 mg"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+                
+                <!-- Clock Icon could go here -->
+                <TextView
+                    android:id="@+id/textTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8:00 AM"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextSecondary"/>
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/textInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take with breakfast"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        
+        <!-- Actions Layout (Visible only when Pending) -->
+        <LinearLayout
+            android:id="@+id/layoutActions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTaken"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Taken"
+                android:textSize="10sp"
+                app:icon="@drawable/ic_check" 
+                app:iconSize="12dp"
+                android:backgroundTint="#4CAF50"
+                app:cornerRadius="20dp"
+                android:layout_marginEnd="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMissed"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Missed"
+                android:textSize="10sp"
+                android:textColor="#F44336"
+                app:icon="@android:drawable/ic_delete"
+                app:iconTint="#F44336"
+                app:iconSize="12dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="#F44336"
+                app:cornerRadius="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

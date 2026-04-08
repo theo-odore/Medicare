@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-mergeDebugResources-30:\\layout\\activity_auth.xml",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-mergeDebugResources-30:\\layout\\item_medicine.xml",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\item_medicine.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-mergeDebugResources-30:\\layout\\item_patient.xml",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\item_patient.xml"
+    },
+    {
+        "merged": "com.medisure.app-mergeDebugResources-30:/layout/activity_history.xml",
+        "source": "com.medisure.app-main-33:/layout/activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-mergeDebugResources-30:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-mergeDebugResources-30:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-mergeDebugResources-30:\\layout\\activity_caregiver.xml",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_caregiver.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-mergeDebugResources-30:\\layout\\activity_add_medicine.xml",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\9.0-milestone-1\\com.medisure.app-main-33:\\layout\\activity_add_medicine.xml"
+    },
+    {
+        "merged": "com.medisure.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.medisure.app-main-33:/layout/activity_main.xml"
+    }
+]
